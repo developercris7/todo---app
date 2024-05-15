@@ -21,13 +21,12 @@ const Item = ({ item, index }) => {
       onDragEnter={() => (dragOverList.current = index)}
       onDragEnd={handleDrag}
     >
-      <label
+      <div
         className={`${Styles.checkBox} ${item.completed ? Styles.checked : ""}`}
-        htmlFor="task"
         onClick={() => handleTaskCompletion(item.id)}
       >
         {item.completed && <img src={check} alt="" />}
-      </label>
+      </div>
       <p
         className={`${item.completed ? Styles.line : ""}`}
         onClick={() => handleTaskCompletion(item.id)}

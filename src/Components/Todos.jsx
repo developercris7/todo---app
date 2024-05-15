@@ -42,7 +42,7 @@ const Todos = () => {
   }, [taskFilter, todoItems]);
 
   return (
-    <section
+    <div
       className={`${Styles.todoContainer} ${
         lightmode ? Styles.backgroundlight : Styles.backgroundDark
       }`}
@@ -107,7 +107,7 @@ const Todos = () => {
           Clear Completed
         </span>
       </div>
-    </section>
+    </div>
   );
 };
 
