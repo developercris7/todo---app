@@ -6,7 +6,7 @@
 }
 .backgroundImage {
   width: 100%;
-  height: 250px;
+  height: 220px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -48,10 +48,11 @@
   width: 100%;
   overflow: hidden;
   position: absolute;
-  top: 80px;
+  /* top: 80px; */
+  top: 50px;
   left: 50%;
   transform: translateX(-50%);
-  padding: 15px;
+  padding:10px 15px ;
 }
 /* Header */
 header {
@@ -208,9 +209,9 @@ form {
   .backgroundImageLight {
     background-image: url("../images/bg-mobile-light.jpg");
   }
-  .todoContainer {
-    height: 320px;
-  }
+  /* .todoContainer {
+    height: 300px;
+  } */
   .filterOptions {
     display: none;
   }
@@ -221,5 +222,8 @@ form {
     justify-content: center;
     align-items: center;
     gap: 10px;
+  }
+  .hint {
+    display: none;
   }
 }
